@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:helper="clr-namespace:Clockpass.Helper"
+             x:Class="Clockpass.MainPage">
+
+    <Grid>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="web" IsVisible="false"
+                     BackgroundColor="White">
+            <helper:GeoWebView Source="https://app.clockpass.info/app" HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand" x:Name="CustomWebview"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="ConnectionError"
+                     IsVisible="false" BackgroundColor="White">
+            <StackLayout VerticalOptions="CenterAndExpand" Spacing="50"
+                         Padding="20">
+                <Label Text="You do not have an active internet connection. Please try again later!" 
+                   HorizontalTextAlignment="Center" FontSize="16"
+                    VerticalTextAlignment="Center" TextColor="Red"/>
+                <Button Text="Try Again" HorizontalOptions="Center"
+                    Clicked="Button_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
