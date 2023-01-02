@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Clockpass</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.Clockpass.app</string>
+	<string>com.clockpass.app</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
