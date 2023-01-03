@@ -27,7 +27,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.clockpass.app</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -35,6 +35,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location permission is required to access your location in the application</string>
+	<string>Location permission is required to complete the clock In form in the application</string>
 </dict>
 </plist>

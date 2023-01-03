@@ -50,12 +50,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Distribution: Manzar Gulzar (XHCHVRTW97)</CodesignKey>
+    <CodesignKey>Apple Development: Manzar Gulzar (455VGYN5DN)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
-    <CodesignProvision>clockpass dist</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: com.clockpass.app</CodesignProvision>
+    <UseHardenedRuntime>false</UseHardenedRuntime>
+    <MtouchVerbosity></MtouchVerbosity>
+    <BuildIpa></BuildIpa>
+    <MtouchVerbosity>2</MtouchVerbosity>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
