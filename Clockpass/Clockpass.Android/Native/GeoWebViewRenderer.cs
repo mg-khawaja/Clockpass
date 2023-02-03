@@ -7,6 +7,7 @@ using Clockpass.Droid.Native;
 [assembly: ExportRenderer(typeof(GeoWebView), typeof(GeoWebViewRenderer))]
 namespace Clockpass.Droid.Native
 {
+    [System.Obsolete]
     public class GeoWebViewRenderer : WebViewRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.WebView> e)

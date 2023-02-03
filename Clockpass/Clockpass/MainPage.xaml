@@ -6,8 +6,9 @@
     <Grid>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="web" IsVisible="false"
                      BackgroundColor="White">
-            <helper:GeoWebView Source="https://app.clockpass.info/app" HorizontalOptions="FillAndExpand"
-                 VerticalOptions="FillAndExpand" x:Name="CustomWebview"/>
+            <helper:WebViewer Source="https://app.clockpass.info/app" HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand" x:Name="CustomWebview"
+                              EvaluateJavascript="{Binding EvaluateJavascript, Mode=OneWayToSource}"/>
         </StackLayout>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="ConnectionError"
                      IsVisible="false" BackgroundColor="White">
@@ -17,8 +18,9 @@
                    HorizontalTextAlignment="Center" FontSize="16"
                     VerticalTextAlignment="Center" TextColor="Red"/>
                 <Button Text="Try Again" HorizontalOptions="Center"
-                    Clicked="Button_Clicked" />
+                    Clicked="Button_Clicked"/>
             </StackLayout>
         </StackLayout>
     </Grid>
 </ContentPage>
+
